@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container border mt-3">
+        <div class="row">
+            <div class="col-12">
+                <img src="./img/1000_F_254890475_8C0JpjRsGofP7CljLLqOlqKqOgh3Y5FX.jpg" alt="" width="100%">
+            </div>
+        </div>
+        <div class="row">
+            <nav class="navbar navbar-expand">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item"><a href="#" class="nav-link">Trang chu</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link" id="btnRegister">Đang ky</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Tro giup</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <table class="table table-bordered table-hover mt-3" id="tableStudentList">
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Ma hoc vien</th>
+                        <th>Ho ten</th>
+                        <th>Email</th>
+                        <th>Tien dich vu</th>
+                        <th>Tien do dung</th>
+                        <th>Tong tien</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>123456789</td>
+                        <td>Tran Anh</td>
+                        <td>hongquan@iuh.edu.vn</td>
+                        <td>30000</td>
+                        <td>10000</td>
+                        <td>40000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="row">
+            <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="modalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">THONG TIN THANH TOAN</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <form action="" class="form-control" id="paymentForm">
+                                <div class="form-group row p-1">
+                                    <label class="col-4 col-sm-3">Ma hoc vien:</label>
+                                    <div class="col-6 col-sm-6">
+                                        <input type="text" class="form-control" id="inputStudentID" placeholder="123456789">
+                                    </div>
+                                    <div class="col-3 col-sm-3 p-2">
+                                        <span id="errorStudentID" class="textRed">*</span>
+                                    </div>
+                                </div>
+                                <div class="form-group row p-1">
+                                    <label class="col-4 col-sm-3">Ho ten:</label>
+                                    <div class="col-6 col-sm-6">
+                                        <input type="text" class="form-control" id="inputFullName" placeholder="Trần Thị A">
+                                    </div>
+                                    <div class="col-3 col-sm-3 p-2">
+                                        <span id="errorFullName" class="textRed">*</span>
+                                    </div>
+                                </div>
+                                <div class="form-group row p-1">
+                                    <label class="col-4 col-sm-3">Email:</label>
+                                    <div class="col-6 col-sm-6">
+                                        <input type="text" class="form-control" id="inputEmail" placeholder="trangtran@iuh.edu.vn">
+                                    </div>
+                                    <div class="col-3 col-sm-3 p-2">
+                                        <span id="errorEmail" class="textRed">*</span>
+                                    </div>
+                                </div>
+                                <div class="form-group row p-1">
+                                    <label class="col-4 col-sm-3">Dich vu:</label>
+                                    <div class="col-6 col-sm-6">
+                                        <select name="servicePrice" id="selectService" class="form-control">
+                                            <option value="2000">Boi</option>
+                                            <option value="3000">Truot van</option>
+                                            <option value="5000">Moto nuoc</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group row p-1">
+                                    <label class="col-4 col-sm-3">Gia tien:</label>
+                                    <div class="col-8 col-sm-6">
+                                        <input type="text" name="serviceValue" id="inputServiceValue" class="form-control" disabled>
+                                    </div>
+                                </div>
+                                <div class="form-group row p-1">
+                                    <label class="col-4 col-sm-3">Do dung:</label>
+                                    <div class="col-8 col-sm-6">
+                                        <input type="checkbox" name="equipment" class="checkboxEquipment" value="20000"> Quan ao boi
+                                    </div>
+                                </div>
+                                <div class="form-group row p-1">
+                                    <div class="col-4 col-sm-3"></div>
+                                    <div class="col-8 col-sm-6">
+                                        <input type="checkbox" name="equipment" class="checkboxEquipment" value="50000"> Phao
+                                    </div>
+                                </div>
+                                <div class="form-group row p-1">
+                                    <div class="col-4 col-sm-3"></div>
+                                    <div class="col-8 col-sm-6">
+                                        <input type="checkbox" name="equipment" class="checkboxEquipment" value="70000"> Kinh boi
+                                    </div>
+                                </div>
+                                <div class="form-group row p-1">
+                                    <label class="col-4 col-sm-3">Tien do dung:</label>
+                                    <div class="col-8 col-sm-6">
+                                        <input type="text" name="equipmentValue" id="inputEquipmentValue" class="form-control" disabled>
+                                    </div>
+                                </div>
+                                <div class="form-group row p-1">
+                                    <label class="col-4 col-sm-3">Tong tien:</label>
+                                    <div class="col-8 col-sm-6">
+                                        <input type="text" name="totalValue" id="inputTotalValue" class="form-control" disabled>
+                                    </div>
+                                </div>
+                                <div class="modal-footer-buttons">
+                                    <button type="button" id="btnPay" class="btn btn-success">Thanh toan</button>
+                                    <button type="reset" class="btn btn-danger">Huy</button>
+                                </div>                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

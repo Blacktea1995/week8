@@ -1,0 +1,70 @@
+.textRed{
+    color: red;
+}
+.textGreen{
+    color: green;
+}
+
+.container{margin-top: 20px;}
+.modal-content{border-radius: 8px;}
+.form-group{margin-bottom: 15px;}
+
+.form-control{
+    border-radius: 5px;
+    padding: 8px 10px;
+}
+
+label{
+    font-weight: 500;
+    color: #333;
+}
+
+table{
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th,td{
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+th{
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+tbody tr:hover{
+    background-color: #f1f1f1;
+}
+
+.navbar-nav li{
+    margin: 0 5px;
+}
+.nav-link{
+    color: #007bff;
+    font-weight: 500;
+}
+.nav-link:hover{
+    color: #0056b3;
+    text-decoration: underline  ;
+}
+
+.modal-footer-buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.modal-footer-buttons .btn{
+    width: 48%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#inputServiceValue,
+#inputEquipmentValue,
+#inputTotalValue{
+    background-color: #e9ecef;
+    font-weight: bold;
+    color: #495057;
+}
